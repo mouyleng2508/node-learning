@@ -1,16 +1,5 @@
-//require("./subModule/logger")
-//require("../logger")
+const path = require("path")
 
+var pathObj = path.parse(__filename)
 
-
-//load module
-const logger = require("./logger")
-
-//require("./subModule/logger") 
-//require("../logger")
-
-logger.log('message')
-
-// loading module another way:
-const log = require("./logger")
-log("message1")
+console.log(pathObj)
